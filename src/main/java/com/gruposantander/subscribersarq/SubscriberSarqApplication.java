@@ -11,7 +11,7 @@ import java.sql.SQLException;
 @SpringBootApplication
 @EnableCaching
 public class SubscriberSarqApplication {
-
+		// fgdfgfdgfdgfdgfdgfdgfdgfdgdfd
 	public static void main(String[] args) {
 		SpringApplication.run(SubscriberSarqApplication.class, args);
 	}
