@@ -1,0 +1,88 @@
+{
+  "type": "record",
+  "name": "Custodian",
+  "namespace": "com.gruposantander.sarq.schemas",
+  "fields": [
+    {
+      "name": "hash",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "Hash",
+      "default": null
+    },
+    {
+      "name": "uri",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "uri",
+      "default": null
+    },
+    {
+      "name": "proc",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "proc",
+      "default": null
+    },
+    {
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "version",
+      "default": null
+    },
+    {
+      "name": "information",
+      "type": [
+        "null",
+        "string"
+      ],
+      "doc": "information",
+      "default": null
+    },
+    {
+      "name": "origins",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "Origin",
+            "namespace": "com.santander.sarq.schemas",
+            "fields": [
+              {
+                "name": "hash",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "Hash",
+                "default": null
+              },
+              {
+                "name": "uri",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "doc": "uri",
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "doc": "List of origins",
+      "default": null
+    }
+  ]
+}
